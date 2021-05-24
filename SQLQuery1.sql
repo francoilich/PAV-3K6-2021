@@ -1,0 +1,1 @@
+﻿select u.*, ru.rol_usuario_nombre as rol_usuario from usuario u join rol_usuario ru on u.rol_usuario=ru.rol_usuario_id where u.rol_usuario = '1'
