@@ -30,6 +30,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_editar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_num_Pedido = new System.Windows.Forms.TextBox();
@@ -50,13 +51,12 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             this.label2 = new System.Windows.Forms.Label();
             this.txt_codigo_interno = new System.Windows.Forms.TextBox();
             this.txt_fecha_pedido = new System.Windows.Forms.TextBox();
-            this.txt_id_pedido = new Editorial_Porfido.Clasess.TextBox01();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.btn_borrar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
-            this.btn_editar = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
+            this.txt_id_pedido = new Editorial_Porfido.Clasess.TextBox01();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -76,6 +76,16 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar";
+            // 
+            // btn_editar
+            // 
+            this.btn_editar.Location = new System.Drawing.Point(375, 24);
+            this.btn_editar.Name = "btn_editar";
+            this.btn_editar.Size = new System.Drawing.Size(95, 38);
+            this.btn_editar.TabIndex = 7;
+            this.btn_editar.Text = "Editar";
+            this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // btn_Cancelar
             // 
@@ -115,9 +125,12 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             // 
             // dgvPedido
             // 
+            this.dgvPedido.AllowUserToAddRows = false;
+            this.dgvPedido.AllowUserToDeleteRows = false;
             this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPedido.Location = new System.Drawing.Point(285, 109);
             this.dgvPedido.Name = "dgvPedido";
+            this.dgvPedido.ReadOnly = true;
             this.dgvPedido.Size = new System.Drawing.Size(494, 242);
             this.dgvPedido.TabIndex = 1;
             this.dgvPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedido_CellContentClick);
@@ -259,17 +272,6 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             this.txt_fecha_pedido.Size = new System.Drawing.Size(100, 20);
             this.txt_fecha_pedido.TabIndex = 1;
             // 
-            // txt_id_pedido
-            // 
-            this.txt_id_pedido.Location = new System.Drawing.Point(89, 24);
-            this.txt_id_pedido.Name = "txt_id_pedido";
-            this.txt_id_pedido.Pp_campo = null;
-            this.txt_id_pedido.Pp_MensajeError = null;
-            this.txt_id_pedido.Pp_tabla = null;
-            this.txt_id_pedido.Pp_Validable = false;
-            this.txt_id_pedido.Size = new System.Drawing.Size(100, 20);
-            this.txt_id_pedido.TabIndex = 0;
-            // 
             // btn_guardar
             // 
             this.btn_guardar.Location = new System.Drawing.Point(22, 374);
@@ -310,16 +312,6 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // btn_editar
-            // 
-            this.btn_editar.Location = new System.Drawing.Point(375, 24);
-            this.btn_editar.Name = "btn_editar";
-            this.btn_editar.Size = new System.Drawing.Size(95, 38);
-            this.btn_editar.TabIndex = 7;
-            this.btn_editar.Text = "Editar";
-            this.btn_editar.UseVisualStyleBackColor = true;
-            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
-            // 
             // btn_cancel
             // 
             this.btn_cancel.Location = new System.Drawing.Point(135, 374);
@@ -329,6 +321,17 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             this.btn_cancel.Text = "Cancelar";
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // txt_id_pedido
+            // 
+            this.txt_id_pedido.Location = new System.Drawing.Point(89, 24);
+            this.txt_id_pedido.Name = "txt_id_pedido";
+            this.txt_id_pedido.Pp_campo = null;
+            this.txt_id_pedido.Pp_MensajeError = null;
+            this.txt_id_pedido.Pp_tabla = null;
+            this.txt_id_pedido.Pp_Validable = false;
+            this.txt_id_pedido.Size = new System.Drawing.Size(100, 20);
+            this.txt_id_pedido.TabIndex = 0;
             // 
             // FRM_ABM_Pedido
             // 

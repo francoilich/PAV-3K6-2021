@@ -69,9 +69,12 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
 
 
                 pedido.Insertar();
+                MessageBox.Show("Pedido cargado con exito");
+                return;
             }
             else
             {
+                MessageBox.Show("Hubo un error al cargarse el pedido!");
                 return;
             }
         }

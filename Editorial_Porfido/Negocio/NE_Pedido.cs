@@ -51,7 +51,7 @@ namespace Editorial_Porfido.Negocio
         }
         public void Borrar()
         {
-            string sqlDelete = "DELETE FROM Pedidos WHERE id_pedido= " + Pp_id_pedido;
+            string sqlDelete = "DELETE FROM Pedidos WHERE id_pedido= " + int.Parse(Pp_id_pedido);
             _BD.Borrar(sqlDelete);
 
         }

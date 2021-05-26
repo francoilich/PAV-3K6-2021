@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Editorial_Porfido.Formularios;
+using Editorial_Porfido.Formularios.Frm_ABM_Pedido;
+using Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria;
 
 namespace Editorial_Porfido
 {
@@ -17,8 +18,8 @@ namespace Editorial_Porfido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Login());
-            Application.Run(new Frm_Escritorio());
+            //Application.Run(new Frm_Login());
+            Application.Run(new FRM_ABM_Empresa_Publicitaria());
             //Application.Run(new Frm_subscriptor());
             
         }

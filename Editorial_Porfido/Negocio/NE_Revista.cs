@@ -58,10 +58,6 @@ namespace Editorial_Porfido.Negocio
             //: 'Falta la comilla de cierre después de la cadena de caracteres ''.
 //Sintaxis incorrecta cerca de ''.'
 
-
-
-
-
             _BD.Modificar(sqlModificar);
         }
 
@@ -71,11 +67,6 @@ namespace Editorial_Porfido.Negocio
             _BD.Borrar(sqlDelete);
             
            }
-        //public void Borrar(string codigo)
-        //{
-        //    string sqlDelete = "DELETE FROM Revista WHERE codigo_interno= " + codigo;
-        //    _BD.
-        //}
     }
 
 }

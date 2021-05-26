@@ -36,16 +36,16 @@ namespace Editorial_Porfido.Formularios
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Suscriptor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodRevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grid_suscripcion = new System.Windows.Forms.DataGridView();
             this.chkTodos = new System.Windows.Forms.CheckBox();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.id_suscriptor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodRevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_suscripcion)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -105,52 +105,23 @@ namespace Editorial_Porfido.Formularios
             this.button1.TabIndex = 6;
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // grid_suscripcion
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Suscriptor,
+            this.grid_suscripcion.AllowUserToAddRows = false;
+            this.grid_suscripcion.AllowUserToDeleteRows = false;
+            this.grid_suscripcion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_suscripcion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_suscriptor,
             this.CodRevista,
             this.FechaInicio,
             this.FechaFin});
-            this.dataGridView1.Location = new System.Drawing.Point(40, 126);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(713, 232);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // Suscriptor
-            // 
-            this.Suscriptor.HeaderText = "Suscriptor";
-            this.Suscriptor.Name = "Suscriptor";
-            this.Suscriptor.ReadOnly = true;
-            this.Suscriptor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CodRevista
-            // 
-            this.CodRevista.HeaderText = "Codigo Revista";
-            this.CodRevista.Name = "CodRevista";
-            this.CodRevista.ReadOnly = true;
-            this.CodRevista.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // FechaInicio
-            // 
-            this.FechaInicio.HeaderText = "Fecha Inicio";
-            this.FechaInicio.Name = "FechaInicio";
-            this.FechaInicio.ReadOnly = true;
-            this.FechaInicio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.FechaInicio.Width = 200;
-            // 
-            // FechaFin
-            // 
-            this.FechaFin.HeaderText = "Fecha Fin";
-            this.FechaFin.Name = "FechaFin";
-            this.FechaFin.ReadOnly = true;
-            this.FechaFin.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.FechaFin.Width = 200;
+            this.grid_suscripcion.Location = new System.Drawing.Point(40, 126);
+            this.grid_suscripcion.Name = "grid_suscripcion";
+            this.grid_suscripcion.ReadOnly = true;
+            this.grid_suscripcion.Size = new System.Drawing.Size(713, 232);
+            this.grid_suscripcion.TabIndex = 7;
             // 
             // chkTodos
             // 
@@ -189,6 +160,36 @@ namespace Editorial_Porfido.Formularios
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
             // 
+            // id_suscriptor
+            // 
+            this.id_suscriptor.HeaderText = "Id suscriptor";
+            this.id_suscriptor.Name = "id_suscriptor";
+            this.id_suscriptor.ReadOnly = true;
+            this.id_suscriptor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CodRevista
+            // 
+            this.CodRevista.HeaderText = "Codigo Revista";
+            this.CodRevista.Name = "CodRevista";
+            this.CodRevista.ReadOnly = true;
+            this.CodRevista.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // FechaInicio
+            // 
+            this.FechaInicio.HeaderText = "Fecha Inicio";
+            this.FechaInicio.Name = "FechaInicio";
+            this.FechaInicio.ReadOnly = true;
+            this.FechaInicio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FechaInicio.Width = 200;
+            // 
+            // FechaFin
+            // 
+            this.FechaFin.HeaderText = "Fecha Fin";
+            this.FechaFin.Name = "FechaFin";
+            this.FechaFin.ReadOnly = true;
+            this.FechaFin.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FechaFin.Width = 200;
+            // 
             // Frm_suscripcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,7 +199,7 @@ namespace Editorial_Porfido.Formularios
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.chkTodos);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grid_suscripcion);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
@@ -210,7 +211,7 @@ namespace Editorial_Porfido.Formularios
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_suscripcion";
             this.Text = "Suscripcion";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_suscripcion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,14 +226,14 @@ namespace Editorial_Porfido.Formularios
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Suscriptor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CodRevista;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaInicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaFin;
+        private System.Windows.Forms.DataGridView grid_suscripcion;
         private System.Windows.Forms.CheckBox chkTodos;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_suscriptor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodRevista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaInicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaFin;
     }
 }

@@ -11,6 +11,8 @@ using Editorial_Porfido.Negocio;
 using Editorial_Porfido.Formularios.ABM_Usuarios;
 using Editorial_Porfido.Formularios.Frm_ABM_Pedido;
 using Editorial_Porfido.Formularios.Frm_ABM_Revista;
+using Editorial_Porfido.Formularios.Frm_ABM_Tarjeta;
+using Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria;
 namespace Editorial_Porfido
 {
     public partial class Frm_Escritorio : Form
@@ -50,6 +52,20 @@ namespace Editorial_Porfido
             FRM_ABM_Revista _ABM_Revista = new FRM_ABM_Revista();
             _ABM_Revista.ShowDialog();
             _ABM_Revista.Dispose();
+        }
+
+        private void btn_tarjeta_Click(object sender, EventArgs e)
+        {
+            FRM_ABM_Tarjeta _ABM_Tarjeta = new FRM_ABM_Tarjeta();
+            _ABM_Tarjeta.ShowDialog();
+            _ABM_Tarjeta.Dispose();
+        }
+
+        private void btn_empresa_publicitaria_Click(object sender, EventArgs e)
+        {
+            FRM_ABM_Empresa_Publicitaria _ABM_Empresa_Publicitaria = new FRM_ABM_Empresa_Publicitaria();
+            _ABM_Empresa_Publicitaria.ShowDialog();
+            _ABM_Empresa_Publicitaria.Dispose();
         }
     }
 }
