@@ -13,8 +13,8 @@ using System.Data.SqlClient;
 namespace Editorial_Porfido
 {
     public partial class Frm_Login : Form
-
     {
+        NE_usuario usuario = new NE_usuario();
         public string Pp_usuario
         {
             get { return txt_usu.Text; }
@@ -55,21 +55,16 @@ namespace Editorial_Porfido
                 return;
 
             }
-            NE_usuario usuario = new NE_usuario();
-            if (usuario.ValidarUsuario(txt_usu.Text, txt_usu.Text) == NE_usuario.ResultadoValidacion.existe)
+            if (usuario.ValidarUsuario(txt_usu.Text, txt_pass.Text) == NE_usuario.ResultadoValidacion.existe)
             {
-                SqlConnection conexion = new SqlConnection();
-                SqlCommand cmd = new SqlCommand();
-                DataTable tabla = new DataTable();
-
-                conexion.ConnectionString = "Data Source = 200.69.137.167,11333; Initial Catalog = BD3K6G13_2021; Persist Security Info = True; User ID = BD3K6G13_2021; Password = *****";
-                    conexion.Open();
-
+                Frm_Escritorio escritorio = new Frm_Escritorio();
+                escritorio.ShowDialog();
+                escritorio.Dispose();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("El Usuario y Password no existen");
+                MessageBox.Show("El Usuario y Password no coinciden");
                 return;
             }
 
@@ -78,6 +73,11 @@ namespace Editorial_Porfido
 
 
 
+
+        }
+
+        private void Frm_Login_Load(object sender, EventArgs e)
+        {
 
         }
     }

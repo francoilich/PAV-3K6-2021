@@ -59,5 +59,33 @@ namespace Editorial_Porfido.Clasess
             cmd.ExecuteNonQuery();
             desconectar();
         }
+        public void Insertar(string SqlInsertar)
+        {
+            conectar();
+            cmd.CommandText = SqlInsertar;
+            cmd.ExecuteNonQuery();
+            desconectar();
+        }
+
+        public void Modificar(string SqlModificar)
+        {
+            InsModBorr(SqlModificar);
+        }
+        private void InsModBorr(string sql)
+        {
+            conectar();
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            desconectar();
+        }
+
+        public void Borrar(string SqlBorrar)
+        {
+            conectar();
+            cmd.CommandText = SqlBorrar;
+            cmd.ExecuteNonQuery();
+            desconectar();
+        }
+
     }
 }

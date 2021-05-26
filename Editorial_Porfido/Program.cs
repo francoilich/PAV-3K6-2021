@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Editorial_Porfido.Formularios.ABM_Usuarios;
+using Editorial_Porfido.Formularios;
 
 namespace Editorial_Porfido
 {
@@ -17,9 +17,10 @@ namespace Editorial_Porfido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Escritorio());
             Application.Run(new Frm_Login());
-            //Application.Run(new ABM_Usuarios());
+            Application.Run(new Frm_Escritorio());
+            //Application.Run(new Frm_subscriptor());
+            
         }
     }
 }

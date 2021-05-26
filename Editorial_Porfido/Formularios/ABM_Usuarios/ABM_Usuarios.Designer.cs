@@ -64,6 +64,7 @@ namespace Editorial_Porfido.Formularios.ABM_Usuarios
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar";
             this.toolTip1.SetToolTip(this.groupBox1, "Limpiar");
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_Eliminar
             // 
@@ -185,6 +186,7 @@ namespace Editorial_Porfido.Formularios.ABM_Usuarios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 365);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ABM_Usuarios";
             this.Text = "Usuario";
             this.Load += new System.EventHandler(this.ABM_Usuarios_Load);

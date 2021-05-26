@@ -50,6 +50,10 @@
     <Compile Include="Clasess\ComboBox01.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Clasess\TextBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clasess\TratamientosEspeciales.cs" />
     <Compile Include="Formularios\ABM_Usuarios\ABM_Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +101,60 @@
     </Compile>
     <Compile Include="Formularios\Distribuidor.Designer.cs">
       <DependentUpon>Distribuidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\FRM_ABM_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\FRM_ABM_Pedido.Designer.cs">
+      <DependentUpon>FRM_ABM_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\FRM_Borrar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\FRM_Borrar_Pedido.Designer.cs">
+      <DependentUpon>FRM_Borrar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\FRM_Modificar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\FRM_Modificar_Pedido.Designer.cs">
+      <DependentUpon>FRM_Modificar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\FRM_ABM_Revista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\FRM_ABM_Revista.Designer.cs">
+      <DependentUpon>FRM_ABM_Revista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\FRM_Borrar_Revista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\FRM_Borrar_Revista.designer.cs">
+      <DependentUpon>FRM_Borrar_Revista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\FRM_Modificar_Revista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\FRM_Modificar_Revista.Designer.cs">
+      <DependentUpon>FRM_Modificar_Revista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_agregar_suscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_agregar_suscripcion.Designer.cs">
+      <DependentUpon>Frm_agregar_suscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Subscriptor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Subscriptor.Designer.cs">
+      <DependentUpon>Frm_Subscriptor.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_editar_usuario.cs">
       <SubType>Form</SubType>
@@ -224,6 +282,9 @@
     <Compile Include="Formularios\Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocio\NE_Pedido.cs" />
+    <Compile Include="Negocio\NE_Revista.cs" />
+    <Compile Include="Negocio\NE_Suscriptor.cs" />
     <Compile Include="Negocio\NE_usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -250,6 +311,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Distribuidor.resx">
       <DependentUpon>Distribuidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Pedido\FRM_ABM_Pedido.resx">
+      <DependentUpon>FRM_ABM_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Pedido\FRM_Borrar_Pedido.resx">
+      <DependentUpon>FRM_Borrar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Pedido\FRM_Modificar_Pedido.resx">
+      <DependentUpon>FRM_Modificar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Revista\FRM_ABM_Revista.resx">
+      <DependentUpon>FRM_ABM_Revista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Revista\FRM_Borrar_Revista.resx">
+      <DependentUpon>FRM_Borrar_Revista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Revista\FRM_Modificar_Revista.resx">
+      <DependentUpon>FRM_Modificar_Revista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_agregar_suscripcion.resx">
+      <DependentUpon>Frm_agregar_suscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Subscriptor.resx">
+      <DependentUpon>Frm_Subscriptor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_editar_usuario.resx">
       <DependentUpon>Frm_editar_usuario.cs</DependentUpon>

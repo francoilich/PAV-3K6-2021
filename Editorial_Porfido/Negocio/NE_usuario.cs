@@ -59,7 +59,7 @@ namespace Editorial_Porfido.Negocio
         }
         public DataTable RecuperarXPerfiles(string nombre)
         {
-            string sql = @"select * from usuario where nombre_usuario = '"+ nombre +"'"; 
+            string sql = @"select u.*, ru.rol_usuario_nombre as nom_rol_usuario from usuario u join rol_usuario ru on u.rol_usuario = ru.rol_usuario_id where u.nombre_usuario = '" + nombre + "'";
             return _BD.Ejecutar_Select(sql);
 
         }

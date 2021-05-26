@@ -107,5 +107,10 @@ namespace Editorial_Porfido.Formularios.ABM_Usuarios
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
