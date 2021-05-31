@@ -13,6 +13,9 @@ using Editorial_Porfido.Formularios.Frm_ABM_Pedido;
 using Editorial_Porfido.Formularios.Frm_ABM_Revista;
 using Editorial_Porfido.Formularios.Frm_ABM_Tarjeta;
 using Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria;
+using Editorial_Porfido.Formularios;
+using Editorial_Porfido.Formularios.Frm_ABM_Kiosco;
+using Editorial_Porfido.Formularios.Frm_ABM_Suscriptor;
 namespace Editorial_Porfido
 {
     public partial class Frm_Escritorio : Form
@@ -66,6 +69,27 @@ namespace Editorial_Porfido
             FRM_ABM_Empresa_Publicitaria _ABM_Empresa_Publicitaria = new FRM_ABM_Empresa_Publicitaria();
             _ABM_Empresa_Publicitaria.ShowDialog();
             _ABM_Empresa_Publicitaria.Dispose();
+        }
+
+        private void btn_suscripcion_Click(object sender, EventArgs e)
+        {
+            Frm_suscripcion frm_Suscripcion = new Frm_suscripcion();
+            frm_Suscripcion.ShowDialog();
+            frm_Suscripcion.Dispose();
+        }
+
+        private void btm_kiosco_Click(object sender, EventArgs e)
+        {
+            FRM_ABM_Kiosco _ABM_Kiosco = new FRM_ABM_Kiosco();
+            _ABM_Kiosco.ShowDialog();
+            _ABM_Kiosco.Dispose();
+        }
+
+        private void btn_suscriptor_Click(object sender, EventArgs e)
+        {
+            FRM_Suscriptor _Suscriptor = new FRM_Suscriptor();
+            _Suscriptor.ShowDialog();
+            _Suscriptor.Dispose();
         }
     }
 }

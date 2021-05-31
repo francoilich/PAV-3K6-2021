@@ -113,6 +113,7 @@
             this.btn_suscripcion.TabIndex = 6;
             this.btn_suscripcion.Text = "Suscripcion";
             this.btn_suscripcion.UseVisualStyleBackColor = true;
+            this.btn_suscripcion.Click += new System.EventHandler(this.btn_suscripcion_Click);
             // 
             // btm_kiosco
             // 
@@ -122,6 +123,7 @@
             this.btm_kiosco.TabIndex = 5;
             this.btm_kiosco.Text = "Kiosco";
             this.btm_kiosco.UseVisualStyleBackColor = true;
+            this.btm_kiosco.Click += new System.EventHandler(this.btm_kiosco_Click);
             // 
             // btn_suscriptor
             // 
@@ -131,6 +133,7 @@
             this.btn_suscriptor.TabIndex = 4;
             this.btn_suscriptor.Text = "Suscriptor";
             this.btn_suscriptor.UseVisualStyleBackColor = true;
+            this.btn_suscriptor.Click += new System.EventHandler(this.btn_suscriptor_Click);
             // 
             // btn_pedido
             // 

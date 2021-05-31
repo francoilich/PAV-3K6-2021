@@ -102,11 +102,65 @@
     <Compile Include="Formularios\Distribuidor.Designer.cs">
       <DependentUpon>Distribuidor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form1.cs">
+    <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_Publicitaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_Publicitaria.Designer.cs">
+      <DependentUpon>FRM_Borrar_Empresa_Publicitaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Borrar_Suscriptor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Borrar_Suscriptor.Designer.cs">
+      <DependentUpon>FRM_Borrar_Suscriptor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Modificar_Suscriptor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Modificar_Suscriptor.Designer.cs">
+      <DependentUpon>FRM_Modificar_Suscriptor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Suscriptor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Suscriptor.Designer.cs">
+      <DependentUpon>FRM_Suscriptor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Modificar_suscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Modificar_suscripcion.Designer.cs">
+      <DependentUpon>Frm_Modificar_suscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Borrar_suscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Borrar_suscripcion.Designer.cs">
+      <DependentUpon>Frm_Borrar_suscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Kiosco\FRM_ABM_Kiosco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Kiosco\FRM_ABM_Kiosco.Designer.cs">
+      <DependentUpon>FRM_ABM_Kiosco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Kiosco\FRM_Borrar_Kiosco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Kiosco\FRM_Borrar_Kiosco.Designer.cs">
+      <DependentUpon>FRM_Borrar_Kiosco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Kiosco\FRM_Modificar_Kiosco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Kiosco\FRM_Modificar_Kiosco.Designer.cs">
+      <DependentUpon>FRM_Modificar_Kiosco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_suscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_suscripcion.Designer.cs">
+      <DependentUpon>Frm_suscripcion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_ABM_Empresa_Publicitaria.cs">
       <SubType>Form</SubType>
@@ -313,9 +367,11 @@
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\NE_Empresa_Publicitaria.cs" />
+    <Compile Include="Negocio\NE_Kiosco.cs" />
     <Compile Include="Negocio\NE_Pedido.cs" />
     <Compile Include="Negocio\NE_Revista.cs" />
     <Compile Include="Negocio\NE_Suscripcion.cs" />
+    <Compile Include="Negocio\NE_Suscriptor.cs" />
     <Compile Include="Negocio\NE_Tarjeta.cs" />
     <Compile Include="Negocio\NE_usuario.cs" />
     <Compile Include="Program.cs" />
@@ -344,8 +400,35 @@
     <EmbeddedResource Include="Formularios\Distribuidor.resx">
       <DependentUpon>Distribuidor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_Publicitaria.resx">
+      <DependentUpon>FRM_Borrar_Empresa_Publicitaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Suscriptor\FRM_Borrar_Suscriptor.resx">
+      <DependentUpon>FRM_Borrar_Suscriptor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Suscriptor\FRM_Modificar_Suscriptor.resx">
+      <DependentUpon>FRM_Modificar_Suscriptor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Suscriptor\FRM_Suscriptor.resx">
+      <DependentUpon>FRM_Suscriptor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Modificar_suscripcion.resx">
+      <DependentUpon>Frm_Modificar_suscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Borrar_suscripcion.resx">
+      <DependentUpon>Frm_Borrar_suscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Kiosco\FRM_ABM_Kiosco.resx">
+      <DependentUpon>FRM_ABM_Kiosco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Kiosco\FRM_Borrar_Kiosco.resx">
+      <DependentUpon>FRM_Borrar_Kiosco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Kiosco\FRM_Modificar_Kiosco.resx">
+      <DependentUpon>FRM_Modificar_Kiosco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_suscripcion.resx">
+      <DependentUpon>Frm_suscripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_ABM_Empresa_Publicitaria.resx">
       <DependentUpon>FRM_ABM_Empresa_Publicitaria.cs</DependentUpon>

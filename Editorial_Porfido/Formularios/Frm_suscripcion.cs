@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Editorial_Porfido.Clasess;
 using Editorial_Porfido.Negocio;
+using Editorial_Porfido.Formularios;
 
 namespace Editorial_Porfido.Formularios
 {
@@ -16,6 +17,7 @@ namespace Editorial_Porfido.Formularios
     {
         BE_Acceso_BD _BD = new BE_Acceso_BD();
         NE_Suscripcion suscripcion = new NE_Suscripcion();
+        public string id_suscripcion { get; set; }
         public Frm_suscripcion()
         {
             InitializeComponent();
@@ -52,6 +54,39 @@ namespace Editorial_Porfido.Formularios
                 grid_suscripcion.Rows[i].Cells[3].Value = tabla.Rows[i]["fecha_fin"].ToString();
             }
 
+        }
+
+        private void btn_aceptar_Click(object sender, EventArgs e)
+        {
+            Frm_agregar_suscripcion frm_Agregar = new Frm_agregar_suscripcion();
+            frm_Agregar.ShowDialog();
+            frm_Agregar.Dispose();
+        }
+
+        private void grid_suscripcion_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id_suscripcion = grid_suscripcion.CurrentRow.Cells["id_suscriptor"].Value.ToString();
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            Frm_borrar_suscripcion suscripcion = new Frm_borrar_suscripcion();
+            suscripcion.id_suscriptor = id_suscripcion;
+            suscripcion.ShowDialog();
+            suscripcion.Dispose();
+        }
+
+        private void Frm_suscripcion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            Frm_Modificar_suscripcion frm_Modificar_ = new Frm_Modificar_suscripcion();
+            frm_Modificar_.id_suscriptor = id_suscripcion;
+            frm_Modificar_.ShowDialog();
+            frm_Modificar_.Dispose();
         }
     }
 }

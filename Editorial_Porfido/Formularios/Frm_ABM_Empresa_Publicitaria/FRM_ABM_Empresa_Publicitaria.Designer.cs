@@ -64,13 +64,12 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             this.grid_empresa_publicitaria.AllowUserToAddRows = false;
             this.grid_empresa_publicitaria.AllowUserToDeleteRows = false;
             this.grid_empresa_publicitaria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_empresa_publicitaria.Location = new System.Drawing.Point(18, 70);
-            this.grid_empresa_publicitaria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grid_empresa_publicitaria.Location = new System.Drawing.Point(27, 108);
             this.grid_empresa_publicitaria.Name = "grid_empresa_publicitaria";
             this.grid_empresa_publicitaria.ReadOnly = true;
             this.grid_empresa_publicitaria.RowHeadersWidth = 62;
             this.grid_empresa_publicitaria.RowTemplate.Height = 28;
-            this.grid_empresa_publicitaria.Size = new System.Drawing.Size(422, 193);
+            this.grid_empresa_publicitaria.Size = new System.Drawing.Size(633, 297);
             this.grid_empresa_publicitaria.TabIndex = 0;
             this.grid_empresa_publicitaria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -98,21 +97,18 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             this.groupBox1.Controls.Add(this.btn_eliminar);
             this.groupBox1.Controls.Add(this.btn_editar);
             this.groupBox1.Controls.Add(this.grid_empresa_publicitaria);
-            this.groupBox1.Location = new System.Drawing.Point(8, 8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(711, 336);
+            this.groupBox1.Size = new System.Drawing.Size(1066, 517);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empresa publicitaria";
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(579, 277);
-            this.btn_salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_salir.Location = new System.Drawing.Point(868, 426);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(110, 41);
+            this.btn_salir.Size = new System.Drawing.Size(165, 63);
             this.btn_salir.TabIndex = 23;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -120,10 +116,9 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(271, 44);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancelar.Location = new System.Drawing.Point(406, 68);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(81, 22);
+            this.btn_cancelar.Size = new System.Drawing.Size(122, 34);
             this.btn_cancelar.TabIndex = 22;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
@@ -131,10 +126,9 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(271, 18);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_buscar.Location = new System.Drawing.Point(406, 28);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(81, 22);
+            this.btn_buscar.Size = new System.Drawing.Size(122, 34);
             this.btn_buscar.TabIndex = 21;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
@@ -142,89 +136,79 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             // txt_cuit_buscar
             // 
-            this.txt_cuit_buscar.Location = new System.Drawing.Point(121, 34);
-            this.txt_cuit_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_cuit_buscar.Location = new System.Drawing.Point(182, 52);
             this.txt_cuit_buscar.Name = "txt_cuit_buscar";
-            this.txt_cuit_buscar.Size = new System.Drawing.Size(137, 20);
+            this.txt_cuit_buscar.Size = new System.Drawing.Size(204, 26);
             this.txt_cuit_buscar.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(28, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(115, 20);
             this.label1.TabIndex = 19;
             this.label1.Text = "Buscar por cuit";
             // 
             // txt_numero_calle
             // 
-            this.txt_numero_calle.Location = new System.Drawing.Point(553, 192);
-            this.txt_numero_calle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_numero_calle.Location = new System.Drawing.Point(830, 295);
             this.txt_numero_calle.Name = "txt_numero_calle";
-            this.txt_numero_calle.Size = new System.Drawing.Size(120, 20);
+            this.txt_numero_calle.Size = new System.Drawing.Size(178, 26);
             this.txt_numero_calle.TabIndex = 18;
             // 
             // lbl_numero_calle
             // 
             this.lbl_numero_calle.AutoSize = true;
             this.lbl_numero_calle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbl_numero_calle.Location = new System.Drawing.Point(455, 192);
-            this.lbl_numero_calle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_numero_calle.Location = new System.Drawing.Point(682, 295);
             this.lbl_numero_calle.Name = "lbl_numero_calle";
-            this.lbl_numero_calle.Size = new System.Drawing.Size(90, 16);
+            this.lbl_numero_calle.Size = new System.Drawing.Size(131, 25);
             this.lbl_numero_calle.TabIndex = 17;
             this.lbl_numero_calle.Text = "Numero Calle";
             // 
             // txt_calle
             // 
-            this.txt_calle.Location = new System.Drawing.Point(553, 167);
-            this.txt_calle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_calle.Location = new System.Drawing.Point(830, 257);
             this.txt_calle.Name = "txt_calle";
-            this.txt_calle.Size = new System.Drawing.Size(120, 20);
+            this.txt_calle.Size = new System.Drawing.Size(178, 26);
             this.txt_calle.TabIndex = 16;
             // 
             // txt_ciudad
             // 
-            this.txt_ciudad.Location = new System.Drawing.Point(553, 137);
-            this.txt_ciudad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_ciudad.Location = new System.Drawing.Point(830, 211);
             this.txt_ciudad.Name = "txt_ciudad";
-            this.txt_ciudad.Size = new System.Drawing.Size(120, 20);
+            this.txt_ciudad.Size = new System.Drawing.Size(178, 26);
             this.txt_ciudad.TabIndex = 15;
             // 
             // txt_fecha_inicio
             // 
-            this.txt_fecha_inicio.Location = new System.Drawing.Point(553, 107);
-            this.txt_fecha_inicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_fecha_inicio.Location = new System.Drawing.Point(830, 165);
             this.txt_fecha_inicio.Name = "txt_fecha_inicio";
-            this.txt_fecha_inicio.Size = new System.Drawing.Size(120, 20);
+            this.txt_fecha_inicio.Size = new System.Drawing.Size(178, 26);
             this.txt_fecha_inicio.TabIndex = 13;
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(553, 76);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nombre.Location = new System.Drawing.Point(830, 117);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(120, 20);
+            this.txt_nombre.Size = new System.Drawing.Size(178, 26);
             this.txt_nombre.TabIndex = 12;
             // 
             // txt_cuit
             // 
-            this.txt_cuit.Location = new System.Drawing.Point(553, 44);
-            this.txt_cuit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_cuit.Location = new System.Drawing.Point(830, 68);
             this.txt_cuit.Name = "txt_cuit";
-            this.txt_cuit.Size = new System.Drawing.Size(120, 20);
+            this.txt_cuit.Size = new System.Drawing.Size(178, 26);
             this.txt_cuit.TabIndex = 11;
             // 
             // lbl_calle
             // 
             this.lbl_calle.AutoSize = true;
             this.lbl_calle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbl_calle.Location = new System.Drawing.Point(455, 168);
-            this.lbl_calle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_calle.Location = new System.Drawing.Point(682, 258);
             this.lbl_calle.Name = "lbl_calle";
-            this.lbl_calle.Size = new System.Drawing.Size(39, 16);
+            this.lbl_calle.Size = new System.Drawing.Size(57, 25);
             this.lbl_calle.TabIndex = 10;
             this.lbl_calle.Text = "Calle";
             // 
@@ -232,10 +216,9 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             this.lbl_id_ciudad.AutoSize = true;
             this.lbl_id_ciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbl_id_ciudad.Location = new System.Drawing.Point(455, 137);
-            this.lbl_id_ciudad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_id_ciudad.Location = new System.Drawing.Point(682, 211);
             this.lbl_id_ciudad.Name = "lbl_id_ciudad";
-            this.lbl_id_ciudad.Size = new System.Drawing.Size(65, 16);
+            this.lbl_id_ciudad.Size = new System.Drawing.Size(96, 25);
             this.lbl_id_ciudad.TabIndex = 9;
             this.lbl_id_ciudad.Text = "Id Ciudad";
             // 
@@ -243,10 +226,9 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             this.lbl_fecha_inicio.AutoSize = true;
             this.lbl_fecha_inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbl_fecha_inicio.Location = new System.Drawing.Point(455, 107);
-            this.lbl_fecha_inicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_fecha_inicio.Location = new System.Drawing.Point(682, 165);
             this.lbl_fecha_inicio.Name = "lbl_fecha_inicio";
-            this.lbl_fecha_inicio.Size = new System.Drawing.Size(80, 16);
+            this.lbl_fecha_inicio.Size = new System.Drawing.Size(117, 25);
             this.lbl_fecha_inicio.TabIndex = 7;
             this.lbl_fecha_inicio.Text = "Fecha Inicio";
             // 
@@ -254,10 +236,9 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             this.lbl_nombre.AutoSize = true;
             this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbl_nombre.Location = new System.Drawing.Point(455, 76);
-            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_nombre.Location = new System.Drawing.Point(682, 117);
             this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(57, 16);
+            this.lbl_nombre.Size = new System.Drawing.Size(81, 25);
             this.lbl_nombre.TabIndex = 6;
             this.lbl_nombre.Text = "Nombre";
             // 
@@ -265,19 +246,17 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             this.lbl_cuit_empresa.AutoSize = true;
             this.lbl_cuit_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbl_cuit_empresa.Location = new System.Drawing.Point(455, 44);
-            this.lbl_cuit_empresa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_cuit_empresa.Location = new System.Drawing.Point(682, 68);
             this.lbl_cuit_empresa.Name = "lbl_cuit_empresa";
-            this.lbl_cuit_empresa.Size = new System.Drawing.Size(30, 16);
+            this.lbl_cuit_empresa.Size = new System.Drawing.Size(47, 25);
             this.lbl_cuit_empresa.TabIndex = 5;
             this.lbl_cuit_empresa.Text = "Cuit";
             // 
             // btn_guardar
             // 
-            this.btn_guardar.Location = new System.Drawing.Point(453, 277);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_guardar.Location = new System.Drawing.Point(680, 426);
             this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(110, 41);
+            this.btn_guardar.Size = new System.Drawing.Size(165, 63);
             this.btn_guardar.TabIndex = 4;
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.UseVisualStyleBackColor = true;
@@ -285,10 +264,9 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             // btn_actualizar
             // 
-            this.btn_actualizar.Location = new System.Drawing.Point(271, 277);
-            this.btn_actualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_actualizar.Location = new System.Drawing.Point(406, 426);
             this.btn_actualizar.Name = "btn_actualizar";
-            this.btn_actualizar.Size = new System.Drawing.Size(110, 41);
+            this.btn_actualizar.Size = new System.Drawing.Size(165, 63);
             this.btn_actualizar.TabIndex = 3;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.UseVisualStyleBackColor = true;
@@ -296,10 +274,9 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(147, 277);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_eliminar.Location = new System.Drawing.Point(220, 426);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(110, 41);
+            this.btn_eliminar.Size = new System.Drawing.Size(165, 63);
             this.btn_eliminar.TabIndex = 2;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
@@ -307,22 +284,21 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             // 
             // btn_editar
             // 
-            this.btn_editar.Location = new System.Drawing.Point(18, 277);
-            this.btn_editar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_editar.Location = new System.Drawing.Point(27, 426);
             this.btn_editar.Name = "btn_editar";
-            this.btn_editar.Size = new System.Drawing.Size(110, 41);
+            this.btn_editar.Size = new System.Drawing.Size(165, 63);
             this.btn_editar.TabIndex = 1;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // FRM_ABM_Empresa_Publicitaria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 377);
+            this.ClientSize = new System.Drawing.Size(1101, 580);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FRM_ABM_Empresa_Publicitaria";
             this.Text = "FRM_ABM_Empresa_Publicitaria";
             this.Load += new System.EventHandler(this.FRM_ABM_Empresa_Publicitaria_Load);

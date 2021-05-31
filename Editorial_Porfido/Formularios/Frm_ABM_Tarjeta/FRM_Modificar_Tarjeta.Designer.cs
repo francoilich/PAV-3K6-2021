@@ -30,20 +30,18 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_salir = new System.Windows.Forms.Button();
+            this.btn_modificar = new System.Windows.Forms.Button();
             this.txt_id_tipo_tarjeta = new System.Windows.Forms.TextBox();
             this.txt_id_suscriptor = new System.Windows.Forms.TextBox();
-            this.txt_año = new System.Windows.Forms.TextBox();
-            this.txt_mes = new System.Windows.Forms.TextBox();
+            this.txt_fecha_venc = new System.Windows.Forms.TextBox();
             this.txt_numero = new System.Windows.Forms.TextBox();
             this.txt_id_tarjeta = new System.Windows.Forms.TextBox();
             this.lbl_id_tipo_tarjeta = new System.Windows.Forms.Label();
             this.lbl_id_suscriptor = new System.Windows.Forms.Label();
-            this.lbl_año = new System.Windows.Forms.Label();
-            this.lbl_mes = new System.Windows.Forms.Label();
+            this.lbl_fecha_venc = new System.Windows.Forms.Label();
             this.lbl_numero = new System.Windows.Forms.Label();
             this.lbl_id_tarjeta = new System.Windows.Forms.Label();
-            this.btn_modificar = new System.Windows.Forms.Button();
-            this.btn_salir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,14 +51,12 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
             this.groupBox1.Controls.Add(this.btn_modificar);
             this.groupBox1.Controls.Add(this.txt_id_tipo_tarjeta);
             this.groupBox1.Controls.Add(this.txt_id_suscriptor);
-            this.groupBox1.Controls.Add(this.txt_año);
-            this.groupBox1.Controls.Add(this.txt_mes);
+            this.groupBox1.Controls.Add(this.txt_fecha_venc);
             this.groupBox1.Controls.Add(this.txt_numero);
             this.groupBox1.Controls.Add(this.txt_id_tarjeta);
             this.groupBox1.Controls.Add(this.lbl_id_tipo_tarjeta);
             this.groupBox1.Controls.Add(this.lbl_id_suscriptor);
-            this.groupBox1.Controls.Add(this.lbl_año);
-            this.groupBox1.Controls.Add(this.lbl_mes);
+            this.groupBox1.Controls.Add(this.lbl_fecha_venc);
             this.groupBox1.Controls.Add(this.lbl_numero);
             this.groupBox1.Controls.Add(this.lbl_id_tarjeta);
             this.groupBox1.Location = new System.Drawing.Point(31, 20);
@@ -70,33 +66,46 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modificar revista";
             // 
+            // btn_salir
+            // 
+            this.btn_salir.Location = new System.Drawing.Point(514, 319);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(155, 64);
+            this.btn_salir.TabIndex = 26;
+            this.btn_salir.Text = "Salir";
+            this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
+            // btn_modificar
+            // 
+            this.btn_modificar.Location = new System.Drawing.Point(48, 319);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(155, 64);
+            this.btn_modificar.TabIndex = 25;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
+            // 
             // txt_id_tipo_tarjeta
             // 
-            this.txt_id_tipo_tarjeta.Location = new System.Drawing.Point(233, 243);
+            this.txt_id_tipo_tarjeta.Location = new System.Drawing.Point(233, 211);
             this.txt_id_tipo_tarjeta.Name = "txt_id_tipo_tarjeta";
             this.txt_id_tipo_tarjeta.Size = new System.Drawing.Size(102, 26);
             this.txt_id_tipo_tarjeta.TabIndex = 24;
             // 
             // txt_id_suscriptor
             // 
-            this.txt_id_suscriptor.Location = new System.Drawing.Point(233, 205);
+            this.txt_id_suscriptor.Location = new System.Drawing.Point(233, 173);
             this.txt_id_suscriptor.Name = "txt_id_suscriptor";
             this.txt_id_suscriptor.Size = new System.Drawing.Size(102, 26);
             this.txt_id_suscriptor.TabIndex = 23;
             // 
-            // txt_año
+            // txt_fecha_venc
             // 
-            this.txt_año.Location = new System.Drawing.Point(233, 165);
-            this.txt_año.Name = "txt_año";
-            this.txt_año.Size = new System.Drawing.Size(102, 26);
-            this.txt_año.TabIndex = 22;
-            // 
-            // txt_mes
-            // 
-            this.txt_mes.Location = new System.Drawing.Point(233, 130);
-            this.txt_mes.Name = "txt_mes";
-            this.txt_mes.Size = new System.Drawing.Size(102, 26);
-            this.txt_mes.TabIndex = 21;
+            this.txt_fecha_venc.Location = new System.Drawing.Point(233, 130);
+            this.txt_fecha_venc.Name = "txt_fecha_venc";
+            this.txt_fecha_venc.Size = new System.Drawing.Size(102, 26);
+            this.txt_fecha_venc.TabIndex = 21;
             // 
             // txt_numero
             // 
@@ -115,7 +124,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
             // lbl_id_tipo_tarjeta
             // 
             this.lbl_id_tipo_tarjeta.AutoSize = true;
-            this.lbl_id_tipo_tarjeta.Location = new System.Drawing.Point(77, 246);
+            this.lbl_id_tipo_tarjeta.Location = new System.Drawing.Point(77, 214);
             this.lbl_id_tipo_tarjeta.Name = "lbl_id_tipo_tarjeta";
             this.lbl_id_tipo_tarjeta.Size = new System.Drawing.Size(100, 20);
             this.lbl_id_tipo_tarjeta.TabIndex = 18;
@@ -124,29 +133,20 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
             // lbl_id_suscriptor
             // 
             this.lbl_id_suscriptor.AutoSize = true;
-            this.lbl_id_suscriptor.Location = new System.Drawing.Point(77, 205);
+            this.lbl_id_suscriptor.Location = new System.Drawing.Point(77, 173);
             this.lbl_id_suscriptor.Name = "lbl_id_suscriptor";
             this.lbl_id_suscriptor.Size = new System.Drawing.Size(99, 20);
             this.lbl_id_suscriptor.TabIndex = 17;
             this.lbl_id_suscriptor.Text = "id_suscriptor";
             // 
-            // lbl_año
+            // lbl_fecha_venc
             // 
-            this.lbl_año.AutoSize = true;
-            this.lbl_año.Location = new System.Drawing.Point(77, 165);
-            this.lbl_año.Name = "lbl_año";
-            this.lbl_año.Size = new System.Drawing.Size(124, 20);
-            this.lbl_año.TabIndex = 16;
-            this.lbl_año.Text = "año vencimiento";
-            // 
-            // lbl_mes
-            // 
-            this.lbl_mes.AutoSize = true;
-            this.lbl_mes.Location = new System.Drawing.Point(77, 130);
-            this.lbl_mes.Name = "lbl_mes";
-            this.lbl_mes.Size = new System.Drawing.Size(127, 20);
-            this.lbl_mes.TabIndex = 15;
-            this.lbl_mes.Text = "mes vencimiento";
+            this.lbl_fecha_venc.AutoSize = true;
+            this.lbl_fecha_venc.Location = new System.Drawing.Point(77, 130);
+            this.lbl_fecha_venc.Name = "lbl_fecha_venc";
+            this.lbl_fecha_venc.Size = new System.Drawing.Size(137, 20);
+            this.lbl_fecha_venc.TabIndex = 15;
+            this.lbl_fecha_venc.Text = "fecha vencimiento";
             // 
             // lbl_numero
             // 
@@ -166,25 +166,6 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
             this.lbl_id_tarjeta.TabIndex = 13;
             this.lbl_id_tarjeta.Text = "id_tarjeta";
             // 
-            // btn_modificar
-            // 
-            this.btn_modificar.Location = new System.Drawing.Point(48, 319);
-            this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(155, 64);
-            this.btn_modificar.TabIndex = 25;
-            this.btn_modificar.Text = "Modificar";
-            this.btn_modificar.UseVisualStyleBackColor = true;
-            // 
-            // btn_salir
-            // 
-            this.btn_salir.Location = new System.Drawing.Point(514, 319);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(155, 64);
-            this.btn_salir.TabIndex = 26;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = true;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
-            // 
             // FRM_Modificar_Tarjeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -193,6 +174,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
             this.Controls.Add(this.groupBox1);
             this.Name = "FRM_Modificar_Tarjeta";
             this.Text = "FRM_Modificar_Tarjeta";
+            this.Load += new System.EventHandler(this.FRM_Modificar_Tarjeta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -204,14 +186,12 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Tarjeta
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_id_tipo_tarjeta;
         private System.Windows.Forms.TextBox txt_id_suscriptor;
-        private System.Windows.Forms.TextBox txt_año;
-        private System.Windows.Forms.TextBox txt_mes;
+        private System.Windows.Forms.TextBox txt_fecha_venc;
         private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.TextBox txt_id_tarjeta;
         private System.Windows.Forms.Label lbl_id_tipo_tarjeta;
         private System.Windows.Forms.Label lbl_id_suscriptor;
-        private System.Windows.Forms.Label lbl_año;
-        private System.Windows.Forms.Label lbl_mes;
+        private System.Windows.Forms.Label lbl_fecha_venc;
         private System.Windows.Forms.Label lbl_numero;
         private System.Windows.Forms.Label lbl_id_tarjeta;
         private System.Windows.Forms.Button btn_salir;

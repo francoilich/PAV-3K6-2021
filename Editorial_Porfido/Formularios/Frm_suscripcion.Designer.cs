@@ -29,31 +29,20 @@ namespace Editorial_Porfido.Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_suscripcion = new System.Windows.Forms.TextBox();
-            this.Inicio = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.grid_suscripcion = new System.Windows.Forms.DataGridView();
-            this.chkTodos = new System.Windows.Forms.CheckBox();
-            this.btn_aceptar = new System.Windows.Forms.Button();
-            this.btn_modificar = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
             this.id_suscriptor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodRevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chkTodos = new System.Windows.Forms.CheckBox();
+            this.btn_aceptar = new System.Windows.Forms.Button();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grid_suscripcion)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(40, 88);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(247, 23);
-            this.dateTimePicker1.TabIndex = 0;
             // 
             // label1
             // 
@@ -71,31 +60,6 @@ namespace Editorial_Porfido.Formularios
             this.txt_suscripcion.Name = "txt_suscripcion";
             this.txt_suscripcion.Size = new System.Drawing.Size(218, 23);
             this.txt_suscripcion.TabIndex = 2;
-            // 
-            // Inicio
-            // 
-            this.Inicio.AutoSize = true;
-            this.Inicio.Location = new System.Drawing.Point(37, 68);
-            this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(40, 17);
-            this.Inicio.TabIndex = 3;
-            this.Inicio.Text = "Inicio";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(442, 88);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(256, 23);
-            this.dateTimePicker2.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(439, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Fin";
             // 
             // button1
             // 
@@ -117,48 +81,12 @@ namespace Editorial_Porfido.Formularios
             this.CodRevista,
             this.FechaInicio,
             this.FechaFin});
-            this.grid_suscripcion.Location = new System.Drawing.Point(40, 126);
+            this.grid_suscripcion.Location = new System.Drawing.Point(40, 74);
             this.grid_suscripcion.Name = "grid_suscripcion";
             this.grid_suscripcion.ReadOnly = true;
             this.grid_suscripcion.Size = new System.Drawing.Size(713, 232);
             this.grid_suscripcion.TabIndex = 7;
-            // 
-            // chkTodos
-            // 
-            this.chkTodos.AutoSize = true;
-            this.chkTodos.Location = new System.Drawing.Point(124, 47);
-            this.chkTodos.Name = "chkTodos";
-            this.chkTodos.Size = new System.Drawing.Size(67, 21);
-            this.chkTodos.TabIndex = 8;
-            this.chkTodos.Text = "Todos";
-            this.chkTodos.UseVisualStyleBackColor = true;
-            // 
-            // btn_aceptar
-            // 
-            this.btn_aceptar.Location = new System.Drawing.Point(428, 365);
-            this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(96, 34);
-            this.btn_aceptar.TabIndex = 9;
-            this.btn_aceptar.Text = "Aceptar";
-            this.btn_aceptar.UseVisualStyleBackColor = true;
-            // 
-            // btn_modificar
-            // 
-            this.btn_modificar.Location = new System.Drawing.Point(543, 366);
-            this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(96, 33);
-            this.btn_modificar.TabIndex = 10;
-            this.btn_modificar.Text = "Modificar";
-            this.btn_modificar.UseVisualStyleBackColor = true;
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.Location = new System.Drawing.Point(657, 366);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(96, 34);
-            this.btn_eliminar.TabIndex = 11;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.grid_suscripcion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_suscripcion_CellContentClick);
             // 
             // id_suscriptor
             // 
@@ -190,27 +118,65 @@ namespace Editorial_Porfido.Formularios
             this.FechaFin.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.FechaFin.Width = 200;
             // 
+            // chkTodos
+            // 
+            this.chkTodos.AutoSize = true;
+            this.chkTodos.Location = new System.Drawing.Point(124, 47);
+            this.chkTodos.Name = "chkTodos";
+            this.chkTodos.Size = new System.Drawing.Size(67, 21);
+            this.chkTodos.TabIndex = 8;
+            this.chkTodos.Text = "Todos";
+            this.chkTodos.UseVisualStyleBackColor = true;
+            // 
+            // btn_aceptar
+            // 
+            this.btn_aceptar.Location = new System.Drawing.Point(428, 323);
+            this.btn_aceptar.Name = "btn_aceptar";
+            this.btn_aceptar.Size = new System.Drawing.Size(96, 34);
+            this.btn_aceptar.TabIndex = 9;
+            this.btn_aceptar.Text = "Guardar";
+            this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
+            // 
+            // btn_modificar
+            // 
+            this.btn_modificar.Location = new System.Drawing.Point(543, 324);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(96, 33);
+            this.btn_modificar.TabIndex = 10;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.Location = new System.Drawing.Point(657, 324);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(96, 34);
+            this.btn_eliminar.TabIndex = 11;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
+            // 
             // Frm_suscripcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 410);
+            this.ClientSize = new System.Drawing.Size(783, 366);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.chkTodos);
             this.Controls.Add(this.grid_suscripcion);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.Inicio);
             this.Controls.Add(this.txt_suscripcion);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_suscripcion";
             this.Text = "Suscripcion";
+            this.Load += new System.EventHandler(this.Frm_suscripcion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_suscripcion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -218,13 +184,8 @@ namespace Editorial_Porfido.Formularios
         }
 
         #endregion
-
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_suscripcion;
-        private System.Windows.Forms.Label Inicio;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView grid_suscripcion;
         private System.Windows.Forms.CheckBox chkTodos;

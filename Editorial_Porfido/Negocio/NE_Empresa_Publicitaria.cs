@@ -34,18 +34,33 @@ namespace Editorial_Porfido.Negocio
 
 
             _BD.Insertar(sqlInsertar);
-
         }
-        public DataTable recuperarPorCuit(int cuit)
+
+        public DataTable recuperarPorCuit(string cuit_empresa)
         {
-            string sql = @"Select * from Empresa_publicit where cuit_empresa = " + cuit;
+            string sql = @"Select * from Empresa_publicit where cuit_empresa = " + cuit_empresa;
             return _BD.Ejecutar_Select(sql);
         }
+
         public void Borrar()
         {
             string sqlDelete = "DELETE FROM Empresa_publicit WHERE cuit_empresa= " + int.Parse(Pp_cuit);
             _BD.Borrar(sqlDelete);
 
+        }
+
+        public void Modificar()
+        {
+            string sqlModificar = @"UPDATE Empresa_Publicit SET"
+            + "  cuit_empresa = " + Pp_cuit + ""
+            + ", nombre = '" + Pp_nombre + "'"
+            + ", calle= '" + Pp_calle + "'"
+            + ", altura = '" + Pp_numero_calle + "'"
+            + ", fecha_inicio_actividad = "+ Pp_fecha_inicio + ""
+            + ", id_localidad = " + Pp_id_ciudad + ""
+            + " where cuit_empresa = " + Pp_cuit;
+
+            _BD.Modificar(sqlModificar);
         }
 
 

@@ -59,7 +59,6 @@ namespace Editorial_Porfido
             {
                 Frm_Escritorio escritorio = new Frm_Escritorio();
                 escritorio.ShowDialog();
-                escritorio.Dispose();
                 this.Close();
             }
             else

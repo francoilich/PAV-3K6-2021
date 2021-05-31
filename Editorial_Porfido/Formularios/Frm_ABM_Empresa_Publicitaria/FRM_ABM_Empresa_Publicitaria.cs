@@ -90,14 +90,21 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
         private void btn_buscar_Click(object sender, EventArgs e)
         {
             NE_Empresa_Publicitaria empresa_Publicitaria = new NE_Empresa_Publicitaria();
-            grid_empresa_publicitaria.DataSource = empresa_Publicitaria.recuperarPorCuit(int.Parse(txt_cuit_buscar.Text));
+            grid_empresa_publicitaria.DataSource = empresa_Publicitaria.recuperarPorCuit((txt_cuit_buscar.Text));
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
-            FRM_Borrar_Empresa_Publicitaria borrar_Empresa_Publicitaria = new FRM_Borrar_Empresa_Publicitaria();
-            borrar_Empresa_Publicitaria.cuit_empresa = cuit_empresa;
-            borrar_Empresa_Publicitaria.ShowDialog();
+            //FRM_Borrar_Empresa_Publicitaria borrar_Empresa_Publicitaria = new FRM_Borrar_Empresa_Publicitaria();
+            //borrar_Empresa_Publicitaria.cuit_empresa = cuit_empresa;
+            //borrar_Empresa_Publicitaria.ShowDialog();
+        }
+
+        private void btn_editar_Click(object sender, EventArgs e)
+        {
+            FRM_Modificar_Empresa_Publicitaria modificar = new FRM_Modificar_Empresa_Publicitaria();
+            modificar.cuit_empresa = cuit_empresa;
+            modificar.ShowDialog();
         }
     }
 }

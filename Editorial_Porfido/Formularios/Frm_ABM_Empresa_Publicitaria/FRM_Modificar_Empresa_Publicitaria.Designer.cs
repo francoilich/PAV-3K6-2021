@@ -88,6 +88,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             this.btn_modificar.TabIndex = 14;
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // txt_localidad
             // 
@@ -199,6 +200,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
             this.Controls.Add(this.groupBox1);
             this.Name = "FRM_Modificar_Empresa_Publicitaria";
             this.Text = "FRM_Modificar_Empresa_Public";
+            this.Load += new System.EventHandler(this.FRM_Modificar_Empresa_Publicitaria_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

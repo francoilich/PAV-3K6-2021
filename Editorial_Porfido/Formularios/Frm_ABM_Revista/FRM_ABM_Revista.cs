@@ -57,10 +57,14 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Revista
                 revista.Pp_id_numero_edi = txt_id_numero_edi.Text;
                 
                 revista.Insertar();
-            }            else
+                MessageBox.Show("Revista guardada con exito!");
+                return;
+            }
+            else
             {
                 return;
-            }
+            }
+
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
