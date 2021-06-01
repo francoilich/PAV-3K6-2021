@@ -31,7 +31,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria
         private void FRM_Borrar_Empresa_Publicitaria_Load(object sender, EventArgs e)
         {
             NE_Empresa_Publicitaria _Empresa_Publicitaria = new NE_Empresa_Publicitaria();
-            MostrarDatos(_Empresa_Publicitaria.recuperarPorCuit(int.Parse(cuit_empresa)));
+            MostrarDatos(_Empresa_Publicitaria.recuperarPorCuit(cuit_empresa));
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)

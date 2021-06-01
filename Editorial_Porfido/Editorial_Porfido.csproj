@@ -108,6 +108,12 @@
     <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_Publicitaria.Designer.cs">
       <DependentUpon>FRM_Borrar_Empresa_Publicitaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\Recuperar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Pedido\Recuperar_Pedido.designer.cs">
+      <DependentUpon>Recuperar_Pedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Borrar_Suscriptor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,12 +173,6 @@
     </Compile>
     <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_ABM_Empresa_Publicitaria.Designer.cs">
       <DependentUpon>FRM_ABM_Empresa_Publicitaria.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_PublicitariaDE MAS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_PublicitariaDE MAS.Designer.cs">
-      <DependentUpon>FRM_Borrar_Empresa_PublicitariaDE MAS.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Modificar_Empresa_Publicitaria.cs">
       <SubType>Form</SubType>
@@ -403,6 +403,9 @@
     <EmbeddedResource Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_Publicitaria.resx">
       <DependentUpon>FRM_Borrar_Empresa_Publicitaria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Pedido\Recuperar_Pedido.resx">
+      <DependentUpon>Recuperar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Suscriptor\FRM_Borrar_Suscriptor.resx">
       <DependentUpon>FRM_Borrar_Suscriptor.cs</DependentUpon>
     </EmbeddedResource>
@@ -432,9 +435,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_ABM_Empresa_Publicitaria.resx">
       <DependentUpon>FRM_ABM_Empresa_Publicitaria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Borrar_Empresa_PublicitariaDE MAS.resx">
-      <DependentUpon>FRM_Borrar_Empresa_PublicitariaDE MAS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Empresa_Publicitaria\FRM_Modificar_Empresa_Publicitaria.resx">
       <DependentUpon>FRM_Modificar_Empresa_Publicitaria.cs</DependentUpon>

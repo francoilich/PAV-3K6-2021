@@ -19,10 +19,11 @@ namespace Editorial_Porfido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Login());
-           // Application.Run(new Frm_suscripcion());
+            Application.Run(new Recuperar_Pedido());
+            //Application.Run(new Frm_Login());
+            // Application.Run(new Frm_suscripcion());
             //Application.Run(new Frm_subscriptor());
-            
+
         }
     }
 }
