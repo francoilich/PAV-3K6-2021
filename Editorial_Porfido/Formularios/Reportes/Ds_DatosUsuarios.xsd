@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_DatosUsuarios" targetNamespace="http://tempuri.org/Ds_DatosUsuarios.xsd" xmlns:mstns="http://tempuri.org/Ds_DatosUsuarios.xsd" xmlns="http://tempuri.org/Ds_DatosUsuarios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_DatosUsuarios" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_DatosUsuarios" msprop:Generator_UserDSName="Ds_DatosUsuarios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReporteUsu01" msprop:Generator_TableClassName="ReporteUsu01DataTable" msprop:Generator_TableVarName="tableReporteUsu01" msprop:Generator_TablePropName="ReporteUsu01" msprop:Generator_RowDeletingName="ReporteUsu01RowDeleting" msprop:Generator_RowChangingName="ReporteUsu01RowChanging" msprop:Generator_RowEvHandlerName="ReporteUsu01RowChangeEventHandler" msprop:Generator_RowDeletedName="ReporteUsu01RowDeleted" msprop:Generator_UserTableName="ReporteUsu01" msprop:Generator_RowChangedName="ReporteUsu01RowChanged" msprop:Generator_RowEvArgName="ReporteUsu01RowChangeEvent" msprop:Generator_RowClassName="ReporteUsu01Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="usuario_id" msprop:Generator_ColumnVarNameInTable="columnusuario_id" msprop:Generator_ColumnPropNameInRow="usuario_id" msprop:Generator_ColumnPropNameInTable="usuario_idColumn" msprop:Generator_UserColumnName="usuario_id" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre_usuario" msprop:Generator_ColumnVarNameInTable="columnnombre_usuario" msprop:Generator_ColumnPropNameInRow="nombre_usuario" msprop:Generator_ColumnPropNameInTable="nombre_usuarioColumn" msprop:Generator_UserColumnName="nombre_usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="apellido" msprop:Generator_ColumnVarNameInTable="columnapellido" msprop:Generator_ColumnPropNameInRow="apellido" msprop:Generator_ColumnPropNameInTable="apellidoColumn" msprop:Generator_UserColumnName="apellido" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
