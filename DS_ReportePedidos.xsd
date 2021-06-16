@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_ReporteDistribucion" targetNamespace="http://tempuri.org/DS_ReporteDistribucion.xsd" xmlns:mstns="http://tempuri.org/DS_ReporteDistribucion.xsd" xmlns="http://tempuri.org/DS_ReporteDistribucion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_ReporteDistribucion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_ReporteDistribucion" msprop:Generator_UserDSName="DS_ReporteDistribucion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Distribucion" msprop:Generator_TableClassName="DistribucionDataTable" msprop:Generator_TableVarName="tableDistribucion" msprop:Generator_TablePropName="Distribucion" msprop:Generator_RowDeletingName="DistribucionRowDeleting" msprop:Generator_RowChangingName="DistribucionRowChanging" msprop:Generator_RowEvHandlerName="DistribucionRowChangeEventHandler" msprop:Generator_RowDeletedName="DistribucionRowDeleted" msprop:Generator_UserTableName="Distribucion" msprop:Generator_RowChangedName="DistribucionRowChanged" msprop:Generator_RowEvArgName="DistribucionRowChangeEvent" msprop:Generator_RowClassName="DistribucionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_distribucion" msprop:Generator_ColumnVarNameInTable="columnid_distribucion" msprop:Generator_ColumnPropNameInRow="id_distribucion" msprop:Generator_ColumnPropNameInTable="id_distribucionColumn" msprop:Generator_UserColumnName="id_distribucion" type="xs:string" minOccurs="0" />
+              <xs:element name="recibidos" msprop:Generator_ColumnVarNameInTable="columnrecibidos" msprop:Generator_ColumnPropNameInRow="recibidos" msprop:Generator_ColumnPropNameInTable="recibidosColumn" msprop:Generator_UserColumnName="recibidos" type="xs:string" minOccurs="0" />
+              <xs:element name="pagados" msprop:Generator_ColumnVarNameInTable="columnpagados" msprop:Generator_ColumnPropNameInRow="pagados" msprop:Generator_ColumnPropNameInTable="pagadosColumn" msprop:Generator_UserColumnName="pagados" type="xs:string" minOccurs="0" />
+              <xs:element name="devueltos" msprop:Generator_ColumnVarNameInTable="columndevueltos" msprop:Generator_ColumnPropNameInRow="devueltos" msprop:Generator_ColumnPropNameInTable="devueltosColumn" msprop:Generator_UserColumnName="devueltos" type="xs:string" minOccurs="0" />
+              <xs:element name="id_pedido" msprop:Generator_ColumnVarNameInTable="columnid_pedido" msprop:Generator_ColumnPropNameInRow="id_pedido" msprop:Generator_ColumnPropNameInTable="id_pedidoColumn" msprop:Generator_UserColumnName="id_pedido" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
