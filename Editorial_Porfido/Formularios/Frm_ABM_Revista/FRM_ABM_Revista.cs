@@ -102,5 +102,12 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Revista
             tabla = _BD.Ejecutar_Select(sql);
             grid_revista.DataSource = tabla;
         }
+
+        private void btn_plan_Click(object sender, EventArgs e)
+        {
+            Plan plan = new Plan();
+            plan.ShowDialog();
+            plan.Dispose();
+        }
     }
 }

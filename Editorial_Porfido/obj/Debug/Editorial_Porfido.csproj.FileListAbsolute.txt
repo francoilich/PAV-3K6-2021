@@ -144,7 +144,6 @@ C:\Users\Franco\Downloads\Editorial_Porfido\Editorial_Porfido\Editorial_Porfido\
 C:\Users\Franco\Downloads\Editorial_Porfido\Editorial_Porfido\Editorial_Porfido\Editorial_Porfido\obj\Debug\Editorial_Porfido.csprojAssemblyReference.cache
 C:\Users\Franco\Downloads\Editorial_Porfido\Editorial_Porfido\Editorial_Porfido\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Frm_Modificar_suscripcion.resources
 C:\Users\Franco\Downloads\Editorial_Porfido\Editorial_Porfido\Editorial_Porfido\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Frm_ABM_Suscriptor.FRM_Modificar_Suscriptor.resources
-C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.csprojAssemblyReference.cache
 C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.ABM_Usuarios.ABM_Usuarios.resources
 C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Empresa_publicitaria.resources
 C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Detalle_pedido.resources
@@ -205,3 +204,8 @@ C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\bin\Debug\Editorial_Porfido.exe.c
 C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\bin\Debug\Editorial_Porfido.exe
 C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\bin\Debug\Editorial_Porfido.pdb
 C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Frm_ABM_Pedido.Recuperar_Pedido.resources
+C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Frm_ABM_Revista.Frm_Asignacion_Regalo.resources
+C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.csprojAssemblyReference.cache
+C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Plan_modificar.resources
+C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Plan_borrar.resources
+C:\Users\Franco\PAV-3k6-2021\Editorial_Porfido\obj\Debug\Editorial_Porfido.Formularios.Frm_Suscripcion.Frm_Suscripcion.resources

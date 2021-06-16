@@ -29,30 +29,32 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_actualizar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
-            this.txt_id_numero_edi = new Editorial_Porfido.Clasess.TextBox01();
-            this.txt_rubro = new Editorial_Porfido.Clasess.TextBox01();
-            this.txt_frecuencia = new Editorial_Porfido.Clasess.TextBox01();
-            this.txt_fecha = new Editorial_Porfido.Clasess.TextBox01();
-            this.txt_nombre = new Editorial_Porfido.Clasess.TextBox01();
             this.lbl_num_edicion = new System.Windows.Forms.Label();
             this.lbl_rubro = new System.Windows.Forms.Label();
             this.lbl_frecuencia = new System.Windows.Forms.Label();
             this.lbl_fecha = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.lbl_codigo = new System.Windows.Forms.Label();
-            this.txt_codigo = new Editorial_Porfido.Clasess.TextBox01();
             this.btn_Eliminar = new System.Windows.Forms.Button();
             this.btn_editar = new System.Windows.Forms.Button();
             this.grid_revista = new System.Windows.Forms.DataGridView();
-            this.btn_actualizar = new System.Windows.Forms.Button();
+            this.txt_id_numero_edi = new Editorial_Porfido.Clasess.TextBox01();
+            this.txt_rubro = new Editorial_Porfido.Clasess.TextBox01();
+            this.txt_frecuencia = new Editorial_Porfido.Clasess.TextBox01();
+            this.txt_fecha = new Editorial_Porfido.Clasess.TextBox01();
+            this.txt_nombre = new Editorial_Porfido.Clasess.TextBox01();
+            this.txt_codigo = new Editorial_Porfido.Clasess.TextBox01();
+            this.btn_plan = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_revista)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_plan);
             this.groupBox1.Controls.Add(this.btn_actualizar);
             this.groupBox1.Controls.Add(this.btn_salir);
             this.groupBox1.Controls.Add(this.btn_guardar);
@@ -71,17 +73,27 @@
             this.groupBox1.Controls.Add(this.btn_Eliminar);
             this.groupBox1.Controls.Add(this.btn_editar);
             this.groupBox1.Controls.Add(this.grid_revista);
-            this.groupBox1.Location = new System.Drawing.Point(26, 27);
+            this.groupBox1.Location = new System.Drawing.Point(26, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(746, 391);
+            this.groupBox1.Size = new System.Drawing.Size(746, 422);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Revista";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // btn_actualizar
+            // 
+            this.btn_actualizar.Location = new System.Drawing.Point(278, 347);
+            this.btn_actualizar.Name = "btn_actualizar";
+            this.btn_actualizar.Size = new System.Drawing.Size(95, 38);
+            this.btn_actualizar.TabIndex = 17;
+            this.btn_actualizar.Text = "Actualizar";
+            this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
+            // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(526, 342);
+            this.btn_salir.Location = new System.Drawing.Point(551, 342);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(170, 43);
             this.btn_salir.TabIndex = 16;
@@ -98,61 +110,6 @@
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.UseVisualStyleBackColor = true;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
-            // 
-            // txt_id_numero_edi
-            // 
-            this.txt_id_numero_edi.Location = new System.Drawing.Point(595, 229);
-            this.txt_id_numero_edi.Name = "txt_id_numero_edi";
-            this.txt_id_numero_edi.Pp_campo = null;
-            this.txt_id_numero_edi.Pp_MensajeError = "Falta Cargar Numero Edicion";
-            this.txt_id_numero_edi.Pp_tabla = null;
-            this.txt_id_numero_edi.Pp_Validable = false;
-            this.txt_id_numero_edi.Size = new System.Drawing.Size(125, 20);
-            this.txt_id_numero_edi.TabIndex = 14;
-            // 
-            // txt_rubro
-            // 
-            this.txt_rubro.Location = new System.Drawing.Point(595, 188);
-            this.txt_rubro.Name = "txt_rubro";
-            this.txt_rubro.Pp_campo = null;
-            this.txt_rubro.Pp_MensajeError = "Falta Cargar Rubro";
-            this.txt_rubro.Pp_tabla = null;
-            this.txt_rubro.Pp_Validable = false;
-            this.txt_rubro.Size = new System.Drawing.Size(125, 20);
-            this.txt_rubro.TabIndex = 13;
-            // 
-            // txt_frecuencia
-            // 
-            this.txt_frecuencia.Location = new System.Drawing.Point(595, 143);
-            this.txt_frecuencia.Name = "txt_frecuencia";
-            this.txt_frecuencia.Pp_campo = null;
-            this.txt_frecuencia.Pp_MensajeError = "Falta Cargar id Frecuencia";
-            this.txt_frecuencia.Pp_tabla = null;
-            this.txt_frecuencia.Pp_Validable = false;
-            this.txt_frecuencia.Size = new System.Drawing.Size(125, 20);
-            this.txt_frecuencia.TabIndex = 12;
-            // 
-            // txt_fecha
-            // 
-            this.txt_fecha.Location = new System.Drawing.Point(595, 102);
-            this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Pp_campo = null;
-            this.txt_fecha.Pp_MensajeError = "Falta Cargar Fecha";
-            this.txt_fecha.Pp_tabla = null;
-            this.txt_fecha.Pp_Validable = false;
-            this.txt_fecha.Size = new System.Drawing.Size(125, 20);
-            this.txt_fecha.TabIndex = 11;
-            // 
-            // txt_nombre
-            // 
-            this.txt_nombre.Location = new System.Drawing.Point(595, 69);
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Pp_campo = null;
-            this.txt_nombre.Pp_MensajeError = "Falta Cargar Nombre";
-            this.txt_nombre.Pp_tabla = null;
-            this.txt_nombre.Pp_Validable = false;
-            this.txt_nombre.Size = new System.Drawing.Size(125, 20);
-            this.txt_nombre.TabIndex = 10;
             // 
             // lbl_num_edicion
             // 
@@ -214,20 +171,9 @@
             this.lbl_codigo.TabIndex = 4;
             this.lbl_codigo.Text = "Codigo_interno";
             // 
-            // txt_codigo
-            // 
-            this.txt_codigo.Location = new System.Drawing.Point(595, 31);
-            this.txt_codigo.Name = "txt_codigo";
-            this.txt_codigo.Pp_campo = null;
-            this.txt_codigo.Pp_MensajeError = "Falta Cargar Codigo Interno";
-            this.txt_codigo.Pp_tabla = null;
-            this.txt_codigo.Pp_Validable = false;
-            this.txt_codigo.Size = new System.Drawing.Size(125, 20);
-            this.txt_codigo.TabIndex = 3;
-            // 
             // btn_Eliminar
             // 
-            this.btn_Eliminar.Location = new System.Drawing.Point(179, 328);
+            this.btn_Eliminar.Location = new System.Drawing.Point(150, 347);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(106, 38);
             this.btn_Eliminar.TabIndex = 2;
@@ -237,7 +183,7 @@
             // 
             // btn_editar
             // 
-            this.btn_editar.Location = new System.Drawing.Point(36, 328);
+            this.btn_editar.Location = new System.Drawing.Point(19, 347);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(105, 38);
             this.btn_editar.TabIndex = 1;
@@ -250,22 +196,88 @@
             this.grid_revista.AllowUserToAddRows = false;
             this.grid_revista.AllowUserToDeleteRows = false;
             this.grid_revista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_revista.Location = new System.Drawing.Point(19, 31);
+            this.grid_revista.Location = new System.Drawing.Point(6, 19);
             this.grid_revista.Name = "grid_revista";
             this.grid_revista.ReadOnly = true;
             this.grid_revista.Size = new System.Drawing.Size(438, 266);
             this.grid_revista.TabIndex = 0;
             this.grid_revista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_revista_CellContentClick);
             // 
-            // btn_actualizar
+            // txt_id_numero_edi
             // 
-            this.btn_actualizar.Location = new System.Drawing.Point(324, 328);
-            this.btn_actualizar.Name = "btn_actualizar";
-            this.btn_actualizar.Size = new System.Drawing.Size(95, 38);
-            this.btn_actualizar.TabIndex = 17;
-            this.btn_actualizar.Text = "Actualizar";
-            this.btn_actualizar.UseVisualStyleBackColor = true;
-            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
+            this.txt_id_numero_edi.Location = new System.Drawing.Point(595, 229);
+            this.txt_id_numero_edi.Name = "txt_id_numero_edi";
+            this.txt_id_numero_edi.Pp_campo = null;
+            this.txt_id_numero_edi.Pp_MensajeError = "Falta Cargar Numero Edicion";
+            this.txt_id_numero_edi.Pp_tabla = null;
+            this.txt_id_numero_edi.Pp_Validable = false;
+            this.txt_id_numero_edi.Size = new System.Drawing.Size(125, 20);
+            this.txt_id_numero_edi.TabIndex = 14;
+            // 
+            // txt_rubro
+            // 
+            this.txt_rubro.Location = new System.Drawing.Point(595, 188);
+            this.txt_rubro.Name = "txt_rubro";
+            this.txt_rubro.Pp_campo = null;
+            this.txt_rubro.Pp_MensajeError = "Falta Cargar Rubro";
+            this.txt_rubro.Pp_tabla = null;
+            this.txt_rubro.Pp_Validable = false;
+            this.txt_rubro.Size = new System.Drawing.Size(125, 20);
+            this.txt_rubro.TabIndex = 13;
+            // 
+            // txt_frecuencia
+            // 
+            this.txt_frecuencia.Location = new System.Drawing.Point(595, 143);
+            this.txt_frecuencia.Name = "txt_frecuencia";
+            this.txt_frecuencia.Pp_campo = null;
+            this.txt_frecuencia.Pp_MensajeError = "Falta Cargar id Frecuencia";
+            this.txt_frecuencia.Pp_tabla = null;
+            this.txt_frecuencia.Pp_Validable = false;
+            this.txt_frecuencia.Size = new System.Drawing.Size(125, 20);
+            this.txt_frecuencia.TabIndex = 12;
+            // 
+            // txt_fecha
+            // 
+            this.txt_fecha.Location = new System.Drawing.Point(595, 102);
+            this.txt_fecha.Name = "txt_fecha";
+            this.txt_fecha.Pp_campo = null;
+            this.txt_fecha.Pp_MensajeError = "Falta Cargar Fecha";
+            this.txt_fecha.Pp_tabla = null;
+            this.txt_fecha.Pp_Validable = false;
+            this.txt_fecha.Size = new System.Drawing.Size(125, 20);
+            this.txt_fecha.TabIndex = 11;
+            // 
+            // txt_nombre
+            // 
+            this.txt_nombre.Location = new System.Drawing.Point(595, 69);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Pp_campo = null;
+            this.txt_nombre.Pp_MensajeError = "Falta Cargar Nombre";
+            this.txt_nombre.Pp_tabla = null;
+            this.txt_nombre.Pp_Validable = false;
+            this.txt_nombre.Size = new System.Drawing.Size(125, 20);
+            this.txt_nombre.TabIndex = 10;
+            // 
+            // txt_codigo
+            // 
+            this.txt_codigo.Location = new System.Drawing.Point(595, 31);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Pp_campo = null;
+            this.txt_codigo.Pp_MensajeError = "Falta Cargar Codigo Interno";
+            this.txt_codigo.Pp_tabla = null;
+            this.txt_codigo.Pp_Validable = false;
+            this.txt_codigo.Size = new System.Drawing.Size(125, 20);
+            this.txt_codigo.TabIndex = 3;
+            // 
+            // btn_plan
+            // 
+            this.btn_plan.Location = new System.Drawing.Point(398, 347);
+            this.btn_plan.Name = "btn_plan";
+            this.btn_plan.Size = new System.Drawing.Size(89, 38);
+            this.btn_plan.TabIndex = 18;
+            this.btn_plan.Text = "Plan";
+            this.btn_plan.UseVisualStyleBackColor = true;
+            this.btn_plan.Click += new System.EventHandler(this.btn_plan_Click);
             // 
             // FRM_ABM_Revista
             // 
@@ -275,7 +287,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FRM_ABM_Revista";
-            this.Text = "FRM_ABM_Revista";
+            this.Text = "Revista";
             this.Load += new System.EventHandler(this.FRM_ABM_Revista_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -305,5 +317,6 @@
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_actualizar;
+        private System.Windows.Forms.Button btn_plan;
     }
 }

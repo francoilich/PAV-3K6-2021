@@ -66,7 +66,7 @@ namespace Editorial_Porfido.Negocio
             string sqlDelete = "DELETE FROM Revista WHERE codigo_interno= " + Pp_codigo;
             _BD.Borrar(sqlDelete);
             
-           }
+        }
     }
 
 }

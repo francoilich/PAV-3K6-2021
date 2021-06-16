@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using Editorial_Porfido.Formularios.Frm_ABM_Pedido;
 using Editorial_Porfido.Formularios.Frm_ABM_Empresa_Publicitaria;
 using Editorial_Porfido.Formularios;
+using Editorial_Porfido.Formularios.Frm_ABM_Revista;
+using Editorial_Porfido.Formularios.Frm_Suscripcion;
 
 namespace Editorial_Porfido
 {
@@ -19,8 +21,10 @@ namespace Editorial_Porfido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Recuperar_Pedido());
-            //Application.Run(new Frm_Login());
+            //Application.Run(new Plan());
+            //Application.Run(new Frm_Asignacion_Regalo());
+            //Application.Run(new Recuperar_Pedido());
+            Application.Run(new Frm_Suscripcion());
             // Application.Run(new Frm_suscripcion());
             //Application.Run(new Frm_subscriptor());
 

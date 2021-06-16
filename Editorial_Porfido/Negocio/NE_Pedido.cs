@@ -28,6 +28,11 @@ namespace Editorial_Porfido.Negocio
             return _BD.Ejecutar_Select(sql);
 
         }
+        public DataTable RecuperarTodo()
+        {
+            string sql = @"select * from Pedidos";
+            return _BD.Ejecutar_Select(sql);
+        }
 
        
 

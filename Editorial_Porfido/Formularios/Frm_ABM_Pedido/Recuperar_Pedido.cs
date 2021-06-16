@@ -31,6 +31,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
         {
             BE_Acceso_BD _BD = new BE_Acceso_BD();
             cmb_Roles.CargarCombo();
+            grid_pedido.DataSource = pedido.RecuperarTodo();
         }
 
     }

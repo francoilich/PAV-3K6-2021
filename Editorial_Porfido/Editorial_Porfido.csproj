@@ -47,7 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clasess\BE_Acceso_BD.cs" />
+    <Compile Include="Clasess\BE_Acceso_Datos_T.cs" />
     <Compile Include="Clasess\ComboBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clasess\EstructuraComboBox.cs" />
+    <Compile Include="Clasess\Grid01.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clasess\TextBox01.cs">
@@ -113,6 +118,12 @@
     </Compile>
     <Compile Include="Formularios\Frm_ABM_Pedido\Recuperar_Pedido.designer.cs">
       <DependentUpon>Recuperar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\Frm_Asignacion_Regalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Revista\Frm_Asignacion_Regalo.Designer.cs">
+      <DependentUpon>Frm_Asignacion_Regalo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_ABM_Suscriptor\FRM_Borrar_Suscriptor.cs">
       <SubType>Form</SubType>
@@ -258,6 +269,24 @@
     <Compile Include="Formularios\Frm_Borrar_Usuario.Designer.cs">
       <DependentUpon>Frm_Borrar_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_Suscripcion\Frm_Suscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Suscripcion\Frm_Suscripcion.Designer.cs">
+      <DependentUpon>Frm_Suscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Plan_borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Plan_borrar.Designer.cs">
+      <DependentUpon>Plan_borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Plan_modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Plan_modificar.Designer.cs">
+      <DependentUpon>Plan_modificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Provincia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -367,8 +396,11 @@
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\NE_Empresa_Publicitaria.cs" />
+    <Compile Include="Negocio\NE_Generacion_Suscripcion.cs" />
     <Compile Include="Negocio\NE_Kiosco.cs" />
     <Compile Include="Negocio\NE_Pedido.cs" />
+    <Compile Include="Negocio\NE_plan.cs" />
+    <Compile Include="Negocio\NE_Regalo.cs" />
     <Compile Include="Negocio\NE_Revista.cs" />
     <Compile Include="Negocio\NE_Suscripcion.cs" />
     <Compile Include="Negocio\NE_Suscriptor.cs" />
@@ -405,6 +437,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Pedido\Recuperar_Pedido.resx">
       <DependentUpon>Recuperar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Revista\Frm_Asignacion_Regalo.resx">
+      <DependentUpon>Frm_Asignacion_Regalo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Suscriptor\FRM_Borrar_Suscriptor.resx">
       <DependentUpon>FRM_Borrar_Suscriptor.cs</DependentUpon>
@@ -477,6 +512,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Borrar_Usuario.resx">
       <DependentUpon>Frm_Borrar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Suscripcion\Frm_Suscripcion.resx">
+      <DependentUpon>Frm_Suscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Plan_borrar.resx">
+      <DependentUpon>Plan_borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Plan_modificar.resx">
+      <DependentUpon>Plan_modificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Provincia.resx">
       <DependentUpon>Provincia.cs</DependentUpon>
@@ -564,5 +608,9 @@
   <ItemGroup>
     <None Include="Resources\9ZeIKce.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-gift-boxes-gift-boxes-gifts-gift.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

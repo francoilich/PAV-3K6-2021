@@ -30,13 +30,6 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
         private void InitializeComponent()
         {
             this.grid_pedido = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Cal_pedido = new System.Windows.Forms.MonthCalendar();
@@ -53,61 +46,11 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             this.grid_pedido.AllowUserToAddRows = false;
             this.grid_pedido.AllowUserToDeleteRows = false;
             this.grid_pedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_pedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column7,
-            this.Column4,
-            this.Column5,
-            this.Column6});
             this.grid_pedido.Location = new System.Drawing.Point(327, 63);
             this.grid_pedido.Name = "grid_pedido";
             this.grid_pedido.ReadOnly = true;
             this.grid_pedido.Size = new System.Drawing.Size(461, 178);
             this.grid_pedido.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Fecha inicio";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Fecha Fin";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Codigo interno";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Cantidad";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Precio unitario";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Precio total";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
             // 
             // label1
             // 
@@ -168,7 +111,7 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_buscar.Location = new System.Drawing.Point(307, 267);
+            this.btn_buscar.Location = new System.Drawing.Point(327, 267);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(78, 35);
             this.btn_buscar.TabIndex = 11;
@@ -212,13 +155,6 @@ namespace Editorial_Porfido.Formularios.Frm_ABM_Pedido
         #endregion
 
         private System.Windows.Forms.DataGridView grid_pedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MonthCalendar Cal_pedido;
