@@ -18,6 +18,8 @@ namespace Editorial_Porfido.Negocio
         public string Pp_id_forma_pago { get; set; }
 
         BE_Acceso_BD _BD = new BE_Acceso_BD();
+        BE_Acceso_Datos_T BDT = new BE_Acceso_Datos_T();
+        NE_plan plan = new NE_plan();
         string sql;
 
         public DataTable recuperarTodo()
@@ -61,6 +63,35 @@ namespace Editorial_Porfido.Negocio
 
             _BD.Modificar(sqlModificar);
         }
+        public void Insertar(Grid01 grid01)
+        {
+            DataTable data = recuperarFormaPago(Pp_id_forma_pago);
+            string id_forma_pago = data.Rows[0][0].ToString();
+            string sql = @"insert into suscripcion (id_suscriptor, codigo_interno_revista,fecha_inicio,fecha_fin,id_forma_pago) "
+                 + " VALUES ("
+            + Pp_id_suscriptor
+            + ", " + Pp_cod_revista
+            + ", '" + Pp_fecha_inicio + "'"
+            + ", '" + Pp_fecha_fin + "'"
+            + ", '" + id_forma_pago + " ')";
 
+            BDT.InicioTransaccion();
+            BDT.Insertar(sql);
+            plan.InsertarPlan(grid01);
+            if (BDT.FinalTransaccion() == BE_Acceso_Datos_T.EstadoTransaccion.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente todo");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó nada hubo error");
+            }
+        }
+        public DataTable recuperarFormaPago(string formaPago)
+        {
+            string sql="select id_forma_pago from forma_pago where nombre = '" + formaPago + "'";
+            return _BD.Ejecutar_Select(sql);
+        }
+        
     }
 }

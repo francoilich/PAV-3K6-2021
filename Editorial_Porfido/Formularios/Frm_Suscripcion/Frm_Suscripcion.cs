@@ -16,6 +16,7 @@ namespace Editorial_Porfido.Formularios.Frm_Suscripcion
     public partial class Frm_Suscripcion : Form
     {
         NE_Suscriptor suscriptor = new NE_Suscriptor();
+        NE_Suscripcion suscripcion = new NE_Suscripcion();
         NE_plan plan = new NE_plan();
         NE_Revista revista = new NE_Revista();
         BE_Acceso_BD BD = new BE_Acceso_BD();
@@ -80,6 +81,16 @@ namespace Editorial_Porfido.Formularios.Frm_Suscripcion
                 calculo += double.Parse(grid_plan.Rows[i].Cells[2].Value.ToString());
             }
             return calculo.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            suscripcion.Pp_cod_revista = txt_cod_revista.Text;
+            suscripcion.Pp_fecha_inicio = date_inicio_susc.Text;
+            suscripcion.Pp_fecha_fin = date_fin_susc.Text;
+            suscripcion.Pp_id_forma_pago = cmb_forma_pago.Text;
+            suscripcion.Pp_id_suscriptor = txt_id_suscri.Text;
+            suscripcion.Insertar(grid_plan);
         }
     }
 }

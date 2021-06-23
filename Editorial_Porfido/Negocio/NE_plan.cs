@@ -59,5 +59,22 @@ namespace Editorial_Porfido.Negocio
             string sql = @"select * from plan_revista";
             return BD.EjecutarSelect(sql);
         }
+        public void InsertarPlan(Grid01 plan)
+        {
+            string SqlInsertarAsig = @"INSERT INTO Plan_Revista (fecha_inicio ,fecha_fin, precio, codigo_interno_revista)"
+                                        + "VALUES ("; 
+
+            for (int i = 0; i < plan.Rows.Count; i++)
+            {
+                string ValoresMoviles = "";
+
+                ValoresMoviles += "'" + plan.Rows[i].Cells[0].Value.ToString()
+                                + "', '" + plan.Rows[i].Cells[1].Value.ToString()
+                                 + "', " + plan.Rows[i].Cells[2].Value.ToString()
+                                 + ", " + plan.Rows[i].Cells[3].Value.ToString() + ")";
+
+                BD.Insertar(SqlInsertarAsig + ValoresMoviles);
+            }
+        }
     }
 }
